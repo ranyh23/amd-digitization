@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The AMD Digitization Project</title>
+  <meta name="description" content="Digitized volumes of the American Medical Directory, made freely available for historical research." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVIGATION ─────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" data-page="home">
+      <!-- Caduceus SVG -->
+      <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Staff -->
+        <line x1="30" y1="8" x2="30" y2="76" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Wings -->
+        <path d="M30 16 C20 10, 8 12, 6 20 C4 28, 14 30, 30 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M30 16 C40 10, 52 12, 54 20 C56 28, 46 30, 30 24" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Wing feathers left -->
+        <path d="M14 14 C10 18, 8 22, 10 26" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+        <path d="M9 19 C6 22, 5 26, 7 30" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+        <!-- Wing feathers right -->
+        <path d="M46 14 C50 18, 52 22, 50 26" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+        <path d="M51 19 C54 22, 55 26, 53 30" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+        <!-- Snake 1 -->
+        <path d="M30 28 C22 34, 38 42, 30 48 C22 54, 38 62, 30 68 C26 72, 24 74, 26 76" 
+              fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Snake 2 -->
+        <path d="M30 28 C38 34, 22 42, 30 48 C38 54, 22 62, 30 68 C34 72, 36 74, 34 76" 
+              fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Snake heads -->
+        <circle cx="26" cy="76" r="2" fill="#c9a84c" opacity="0.8"/>
+        <circle cx="34" cy="76" r="2" fill="#c9a84c" opacity="0.8"/>
+        <!-- Top orb -->
+        <circle cx="30" cy="8" r="3.5" fill="#c9a84c" opacity="0.9"/>
+      </svg>
+      <span class="nav-logo-text">AMD Digitization<br>Project</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="data">Data</a></li>
+      <li><a href="#" data-page="methods">Methods</a></li>
+      <li><a href="#" data-page="team">Who We Are</a></li>
+      <li><a href="#" data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- HOME PAGE                                                                  -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-home">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Historical Medical Data · 1906–1942</p>
+        <h1>The American Medical<br><span>Directory</span> Digitization<br>Project</h1>
+        <p class="hero-desc">
+          We provide freely accessible, machine-readable transcriptions of the American Medical
+          Directory — a comprehensive registry of licensed physicians in the United States —
+          spanning seven volumes from 1906 to 1942.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary" data-page="data">Get the Data</a>
+          <a href="#" class="btn-secondary" data-page="about">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-caduceus" aria-hidden="true">
+        <svg viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+          <line x1="60" y1="20" x2="60" y2="190" stroke="#c9a84c" stroke-width="5" stroke-linecap="round"/>
+          <path d="M60 40 C40 25, 15 28, 12 48 C9 68, 30 72, 60 58" fill="none" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M60 40 C80 25, 105 28, 108 48 C111 68, 90 72, 60 58" fill="none" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M25 32 C18 40, 15 52, 18 62" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M13 44 C8 52, 7 62, 12 72" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+          <path d="M95 32 C102 40, 105 52, 102 62" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M107 44 C112 52, 113 62, 108 72" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+          <path d="M60 68 C42 80, 78 98, 60 114 C42 130, 78 150, 60 166 C52 176, 48 180, 52 188" 
+                fill="none" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M60 68 C78 80, 42 98, 60 114 C78 130, 42 150, 60 166 C68 176, 72 180, 68 188" 
+                fill="none" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="52" cy="188" r="4.5" fill="#c9a84c" opacity="0.7"/>
+          <circle cx="68" cy="188" r="4.5" fill="#c9a84c" opacity="0.7"/>
+          <circle cx="60" cy="20" r="8" fill="#c9a84c" opacity="0.85"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Volumes digitized</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1906–1942</span>
+        <span class="stat-label">Years covered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Free</span>
+        <span class="stat-label">Open access</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <p class="section-eyebrow">About the project</p>
+    <h2 class="section-title">A systematic effort to open<br>historical physician records</h2>
+    <div class="divider"></div>
+    <div class="prose">
+      <p>
+        The American Medical Directory (AMD) was published by the American Medical Association
+        beginning in 1906. Each volume listed licensed physicians across the United States,
+        recording name, location, medical school, year of graduation, and other professional
+        details. The directory is a unique longitudinal source for the study of the medical
+        profession in the early twentieth century.
+      </p>
+      <p>
+        This project makes these volumes available as structured, machine-readable data
+        for use in historical and social science research. All data is freely downloadable
+        and accompanied by documentation.
+      </p>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- ABOUT PAGE                                                                 -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <section class="data-hero">
+    <div class="data-hero-inner">
+      <h1>About</h1>
+      <p>The background and goals of the AMD Digitization Project.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="about-grid">
+      <div>
+        <p class="section-eyebrow">Background</p>
+        <h2 class="section-title">The American Medical Directory</h2>
+        <div class="divider"></div>
+        <div class="prose">
+          <p>
+            The American Medical Directory was published by the American Medical Association
+            from 1906 onward. It constitutes one of the most comprehensive contemporaneous
+            records of licensed physicians in the United States, covering name, location,
+            specialty, medical school, and licensure year.
+          </p>
+          <p>
+            Our goal is to make each available volume accessible as clean, structured data,
+            enabling researchers to study the geography, training, and composition of the
+            American medical profession across the first half of the twentieth century.
+          </p>
+          <p>
+            All digitization follows strict transcription protocols: data is entered exactly
+            as it appears in the original source, with no inference or imputation. Accompanying
+            documentation describes the source, structure, and any known limitations of each
+            volume.
+          </p>
+        </div>
+      </div>
+      <div class="about-sidebar">
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Source</div>
+          <div class="sidebar-item-value">American Medical Directory, American Medical Association</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Volumes available</div>
+          <div class="sidebar-item-value">1906, 1912, 1914, 1918, 1921, 1925, 1942</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Access</div>
+          <div class="sidebar-item-value">Freely downloadable, no registration required</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Hosted on</div>
+          <div class="sidebar-item-value">Zenodo (CERN)</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">License</div>
+          <div class="sidebar-item-value">[License placeholder]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- DATA PAGE                                                                  -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-data">
+  <section class="data-hero">
+    <div class="data-hero-inner">
+      <h1>Data</h1>
+      <p>Select a volume year to view and download the available files and documentation.</p>
+    </div>
+  </section>
+
+  <section class="data-selector-section">
+    <label class="selector-label" for="year-select">Select volume year</label>
+    <select class="year-select" id="year-select">
+      <option value="">— Choose a year —</option>
+      <option value="1906">1906</option>
+      <option value="1912">1912</option>
+      <option value="1914">1914</option>
+      <option value="1918">1918</option>
+      <option value="1921">1921</option>
+      <option value="1925">1925</option>
+      <option value="1942">1942</option>
+    </select>
+
+    <div class="file-list" id="file-list"></div>
+  </section>
+</div><!-- /page-data -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- METHODS PAGE                                                               -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-methods">
+  <section class="data-hero">
+    <div class="data-hero-inner">
+      <h1>Methods</h1>
+      <p>How the AMD volumes were digitized and structured.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <p class="section-eyebrow">Digitization process</p>
+    <h2 class="section-title">From printed volume<br>to structured data</h2>
+    <div class="divider"></div>
+
+    <div class="methods-steps">
+      <div class="method-step">
+        <span class="step-num">01</span>
+        <div class="step-content">
+          <h3>Source acquisition</h3>
+          <p>Physical and digitally scanned volumes of the AMD were obtained from [source placeholder]. Each volume was reviewed for completeness and legibility prior to transcription.</p>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="step-num">02</span>
+        <div class="step-content">
+          <h3>Transcription</h3>
+          <p>Data was transcribed manually with strict fidelity to the source: no inference, imputation, or editorial correction. Entries are recorded exactly as they appear in the original volume, including apparent errors and abbreviations.</p>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="step-num">03</span>
+        <div class="step-content">
+          <h3>Verification</h3>
+          <p>Transcribed data was cross-checked against the original source. [Verification protocol placeholder — e.g. double-entry, random sampling, automated checks.]</p>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="step-num">04</span>
+        <div class="step-content">
+          <h3>Documentation</h3>
+          <p>Each volume is accompanied by a documentation file describing the source, variable definitions, known limitations, and any volume-specific notes that researchers should be aware of before using the data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-methods -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- WHO WE ARE PAGE                                                            -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-team">
+  <section class="data-hero">
+    <div class="data-hero-inner">
+      <h1>Who We Are</h1>
+      <p>The team behind the AMD Digitization Project.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <p class="section-eyebrow">Research team</p>
+    <h2 class="section-title">Team</h2>
+    <div class="divider"></div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-name">[Name placeholder]</div>
+        <div class="team-role">Principal Investigator</div>
+        <div class="team-affil">[University / Institution]</div>
+      </div>
+      <div class="team-card">
+        <div class="team-name">[Name placeholder]</div>
+        <div class="team-role">Researcher</div>
+        <div class="team-affil">[University / Institution]</div>
+      </div>
+      <div class="team-card">
+        <div class="team-name">[Name placeholder]</div>
+        <div class="team-role">Researcher</div>
+        <div class="team-affil">[University / Institution]</div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-team -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- CONTACT PAGE                                                               -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <section class="data-hero">
+    <div class="data-hero-inner">
+      <h1>Contact</h1>
+      <p>Questions, feedback, or collaboration enquiries.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h3>General enquiries</h3>
+        <p>For questions about the project, data access, or potential collaboration, please reach out by email.</p>
+        <br>
+        <a href="mailto:[email placeholder]">[email placeholder]</a>
+      </div>
+      <div class="contact-block">
+        <h3>Reporting issues</h3>
+        <p>If you notice an error in the data or documentation, please contact us with the volume year, the entry in question, and a description of the problem.</p>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      © The AMD Digitization Project · Data hosted on Zenodo
+    </div>
+    <div class="footer-right">
+      [Institution placeholder]
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
