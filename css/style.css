@@ -58,7 +58,8 @@ nav .nav-inner {
   text-decoration: none;
 }
 
-.nav-logo svg {
+.nav-logo svg,
+.nav-logo img {
   height: 36px;
   width: auto;
   filter: drop-shadow(0 0 6px rgba(201,168,76,0.4));
@@ -217,7 +218,7 @@ nav .nav-inner {
   flex-shrink: 0;
 }
 
-.hero-caduceus svg {
+.hero-caduceus img {
   height: 260px;
   width: auto;
 }
